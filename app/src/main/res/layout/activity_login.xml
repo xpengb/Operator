@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#f5f6f8"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context="com.nxt.xpengb.operator.ui.LoginActivity">
+
+    <include layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:background="@drawable/et_bg_account"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_phone"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/login_tie_account"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="text"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:hint="@string/hint_account"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/login_iv_account_clear"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_clear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/et_bg_account"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_password"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/login_tie_pass"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:hint="@string/hint_password"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@drawable/et_bg_account"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_password"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/login_tie_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:hint="@string/hint_password"/>
+
+        <TextView
+            android:id="@+id/login_tv_countdown"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="获取"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/login_cb_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我同意"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5c7ad4"
+            android:text="@string/service_agreement"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="8dp"
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        style="?android:textAppearanceSmall"/>
+</LinearLayout>

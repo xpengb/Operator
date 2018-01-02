@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:fitsSystemWindows="true"
+              android:background="@color/base_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作类型："/>
+
+                <EditText
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_type"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_plant"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作物类型："/>
+
+                <EditText
+                    android:id="@+id/et_plant_name"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_plant"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_variety"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品种类型："/>
+
+                <EditText
+                    android:id="@+id/et_variety_name"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_variety"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择批次"/>
+
+                <TextView
+                    android:id="@+id/tv_batch"
+                    android:layout_toLeftOf="@+id/arrow_right"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击选择"/>
+
+                <ImageView
+                    android:id="@+id/arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_landnumber"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地块编号："/>
+
+                <EditText
+                    android:id="@+id/et_land_number"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_landnumber"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="种植面积："/>
+
+                <EditText
+                    android:id="@+id/et_work_area"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_area"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作日期"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_toLeftOf="@+id/date_arrow_right"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击选择"/>
+
+                <ImageView
+                    android:id="@+id/date_arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_operator"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作人："/>
+
+                <EditText
+                    android:id="@+id/et_operator"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_operator"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <EditText
+                    android:id="@+id/et_note"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="4"
+                    android:hint="操作内容"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="12dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/image_add"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/text_timeline_image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作地点："/>
+
+                <EditText
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/tv_position"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/icon_location"
+                    android:drawablePadding="4dp"
+                    android:text="当前位置："/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tv_location"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/dimgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_farmwork_add"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/confirm"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                style="?android:textAppearanceSmall"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

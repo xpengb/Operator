@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">农事通</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="action_feedback">反馈</string>
+    <string name="hint_account">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="sms_content">【农事宝】"%s"（手机短信验证码，为了保证账户安全，请勿向他人泄露，如非本人操作请忽略）</string>
+    <string name="msg_success">获取短信成功</string>
+    <string name="error_get_sms">获取验证码失败</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="service_agreement">《农事通客户服务协议》</string>
+
+    <string-array name="tts_voice_value">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+    </string-array>
+
+    <string-array name="share_type">
+        <item>纯文本</item>
+        <item>仿锤子便签</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
